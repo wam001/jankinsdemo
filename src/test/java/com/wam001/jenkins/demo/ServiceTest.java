@@ -21,4 +21,9 @@ public class ServiceTest {
     public void notEqualTo(){
         assertNotEquals(10, 100);
     }
+
+    @Test
+    public void failedTest(){
+        assertEquals(100, 10);
+    }
 }
