@@ -24,6 +24,6 @@ public class ServiceTest {
 
     @Test
     public void failedTest(){
-        //assertEquals(100, 10);
+        assertEquals(100, 10);
     }
 }
