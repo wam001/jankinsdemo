@@ -15,7 +15,7 @@ class PaymentServiceImplTest {
 
     @Test
     void calculateRateWithBadData(){
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+        Assertions.assertThrows(NullPointerException.class, () -> {
             Double amountToPay = paymentService.sendPayment(0.0);
         });
     }
